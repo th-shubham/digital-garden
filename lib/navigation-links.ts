@@ -32,8 +32,8 @@ const content: ContentNavItem[] = [
 
 export const navigationLinks: NavItem[] = [
   {
-    title: "Content",
-    content,
+    title: "Blog",
+    href: "/posts",
   },
   {
     title: "Projects",
