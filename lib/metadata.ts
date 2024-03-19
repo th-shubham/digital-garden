@@ -32,7 +32,7 @@ const siteMetadata: SiteMetaData = {
   },
   description: defaultDescription,
   siteRepo: "",
-  newsletterProvider: "mailerlite",
+  newsletterProvider: "",
   newsletterUrl: "",
   analyticsProvider: "umami",
   defaultTheme: "system",
