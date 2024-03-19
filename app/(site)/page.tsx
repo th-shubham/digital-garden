@@ -25,11 +25,14 @@ async function getAboutPage() {
 }
 
 export default async function Home() {
-  const aboutPage = await getAboutPage();
-  const posts = allPosts
+  let aboutPage = await getAboutPage();
+  aboutPage = false; /**TODO */
+
+  let posts = allPosts
     .filter((post) => post.status === "published")
     .sort(sortByDate)
     .slice(0, siteMetadata.postsOnHomePage);
+  posts = []; /**TODO */
 
   return (
     <div className="pb-10">
@@ -45,12 +48,12 @@ export default async function Home() {
                 <PostPreview key={post._id} post={post} />
               ))}
             </div>
-            <Link
+            {/* <Link
               href="/posts"
               className="mt-10 flex items-center py-2 text-sm text-accent-foreground underline-offset-4 hover:text-muted-foreground hover:underline"
             >
               See all posts <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
+            </Link> /**TODO  */}
           </div>
           <aside className="w-full">
             <Sidebar />

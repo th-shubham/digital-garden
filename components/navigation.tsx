@@ -64,7 +64,7 @@ export function Navigation() {
         {defaultAuthor.availableForWork && (
           <div className="mx-auto mb-2 text-center sm:hidden">
             <Link href="/now" aria-label="Go to Now page">
-              <WorkAvailabilityBadge />
+              {/* <WorkAvailabilityBadge /> /**TODO  */}
             </Link>
           </div>
         )}
@@ -84,7 +84,7 @@ export function Navigation() {
               </div>
               {defaultAuthor.availableForWork && (
                 <Link href="/now" aria-label="Go to Now page" className="ml-2 hidden sm:block">
-                  <WorkAvailabilityBadge />
+                  {/* <WorkAvailabilityBadge  /**TODO /> */}
                 </Link>
               )}
             </div>

@@ -35,7 +35,7 @@ const siteMetadata: SiteMetaData = {
   siteRepo: "",
   newsletterProvider: "",
   newsletterUrl: "",
-  analyticsProvider: "umami",
+  analyticsProvider: "",
   defaultTheme: "system",
   activeAnnouncement: false,
   announcement: {
