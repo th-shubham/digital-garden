@@ -8,22 +8,22 @@ export const BASE_URL =
   `http://localhost:${process.env.PORT || 3000}`;
 
 export const defaultAuthor: AuthorType = {
-  name: "Amy Shields",
-  handle: "@amyshieldsfake",
+  name: "Shubham Jangid",
+  handle: "@th-shubham",
   socialProfiles,
-  email: "definitelyfake@nevermind.com",
-  website: "https://nextjs.org",
-  jobTitle: "Frontend Engineer & UI Designer",
-  company: "Unicorns & Co.",
+  email: "shubham0jangid@gmail.com",
+  website: "@",
+  jobTitle: "Salesforce Developer",
+  company: "Astonous",
   availableForWork: true,
   location: {
-    city: "Los Angeles",
-    media: "/losangeles.jpg",
+    city: "Jaipur, India",
+    media: "/jaipur.png",
   },
 };
 
 const defaultTitle = `${defaultAuthor.name}'s Blog`;
-const defaultDescription = `I'm ${defaultAuthor.name}. Building hackin’ cool digital products around the world 🌴.`;
+const defaultDescription = `I'm ${defaultAuthor.name}. Integrating Salesforce with needs 🌴.`;
 
 const siteMetadata: SiteMetaData = {
   title: {
@@ -31,9 +31,9 @@ const siteMetadata: SiteMetaData = {
     default: defaultTitle,
   },
   description: defaultDescription,
-  siteRepo: "https://github.com/thedevdavid/digital-garden",
+  siteRepo: "",
   newsletterProvider: "mailerlite",
-  newsletterUrl: "https://developreneur.davidlevai.com",
+  newsletterUrl: "",
   analyticsProvider: "umami",
   defaultTheme: "system",
   activeAnnouncement: true,
