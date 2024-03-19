@@ -96,8 +96,8 @@ export function Navigation() {
                 <MobileNav />
               </nav>
             </div>
-            <div className="order-2 flex w-full items-center gap-2 sm:order-3 sm:w-fit">
-              <CommandDialogComponent />
+            <div className="order-2 flex w-full items-center gap-2 p-2 sm:order-3 sm:w-fit">
+              {/* <CommandDialogComponent /> */}
               <ModeToggle />
             </div>
           </div>
