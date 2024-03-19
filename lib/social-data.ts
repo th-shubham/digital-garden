@@ -14,8 +14,4 @@ export const socialProfiles: SocialProfile[] = [
     name: "x",
     link: "https://twitter.com/i_shubhamjangid",
   },
-  {
-    name: "youtube",
-    link: "https://youtube.com/@thedevdavid",
-  },
 ];

@@ -22,7 +22,7 @@ export const defaultAuthor: AuthorType = {
   },
 };
 
-const defaultTitle = `Building tools for DX 🌴.`;
+const defaultTitle = `Shubham Jangid`;
 // const defaultTitle = `${defaultAuthor.name}'s Blog`;
 const defaultDescription = `I'm ${defaultAuthor.name}. Integrating Salesforce with needs 🌴.`;
 

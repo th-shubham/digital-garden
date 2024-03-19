@@ -13,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function Blog() {
-  const posts = allPosts.filter((post) => post.status === "published").sort(sortByDate);
+  let posts = allPosts.filter((post) => post.status === "published").sort(sortByDate);
 
   return (
     <div className="container mb-4">
