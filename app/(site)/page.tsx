@@ -26,7 +26,7 @@ async function getAboutPage() {
 
 export default async function Home() {
   let aboutPage = await getAboutPage();
-  aboutPage = false; /**TODO */
+  let isVisible = false; //**TODO */
 
   let posts = allPosts
     .filter((post) => post.status === "published")
@@ -68,7 +68,7 @@ export default async function Home() {
           buttonText="Send me the emails"
         />
       )}
-      {aboutPage && (
+      {isVisible && aboutPage && (
         <div className="container max-w-6xl">
           <h2 className="mb-8 font-heading text-4xl font-bold">Who&apos;s this guy again?</h2>
           <div className="grid grid-cols-1 place-items-start justify-between gap-12 lg:grid-cols-3">

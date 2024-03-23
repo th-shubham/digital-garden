@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-4 px-8 md:gap-2 md:px-0 lg:order-1">
           <p className="text-sm text-muted-foreground md:text-left">
-            &copy; {new Date().getFullYear()} Built by {defaultAuthor.name}. &nbsp;
+            &copy; {new Date().getFullYear()} {defaultAuthor.name}. &nbsp;
             <a
               href={defaultAuthor.socialProfiles.find((platform) => platform.name === "x")?.link}
               target="_blank"
