@@ -53,9 +53,7 @@ export default async function PagePage({ params }: PageProps) {
         <h1 className="mt-0">{page.title}</h1>
         {page.description && <p className="m-0 text-xl">{page.description}</p>}
         {page.lastUpdatedDate && (
-          <time className="text-sm text-slate-500">
-            Last updated: {format(parseISO(page.lastUpdatedDate), "LLLL d, yyyy")}
-          </time>
+          <time className="text-sm text-slate-500">{format(parseISO(page.lastUpdatedDate), "LLLL d, yyyy")}</time>
         )}
         <hr className="my-4" />
         <Mdx code={page.body.code} />

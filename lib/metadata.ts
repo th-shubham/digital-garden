@@ -24,7 +24,7 @@ export const defaultAuthor: AuthorType = {
 
 const defaultTitle = `Shubham Jangid`;
 // const defaultTitle = `${defaultAuthor.name}'s Blog`;
-const defaultDescription = `I'm ${defaultAuthor.name}. Integrating Salesforce with needs 🌴.`;
+const defaultDescription = `Building tools for DX 🌴.`;
 
 const siteMetadata: SiteMetaData = {
   title: {

@@ -37,7 +37,7 @@ export default async function Home() {
   return (
     <div className="pb-10">
       <HeroSimple
-        title="Building tools for DX 🌴."
+        title={siteMetadata.description}
         subtitle="I'm Amy. Frontend engineer writing code and blog on the internet."
       />
       <div className="container mt-12 max-w-6xl">
