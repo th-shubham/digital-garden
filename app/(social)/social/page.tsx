@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Project } from "@/types";
 import { Mail } from "lucide-react";
 
 import siteMetadata, { defaultAuthor } from "@/lib/metadata";
@@ -23,7 +24,7 @@ export default async function SocialPage() {
           </div>
           <h2 className="mb-2 mt-6 font-heading text-2xl font-bold">My projects</h2>
           <div className="grid items-stretch gap-4 md:grid-cols-2">
-            {projects.map((item) => (
+            {(projects as Project[]).map((item) => (
               <SpotlightCard key={item.href} {...item} />
             ))}
           </div>

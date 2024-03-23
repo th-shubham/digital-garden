@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { Project } from "@/types";
 import { format, parseISO } from "date-fns";
 import { AlertTriangle } from "lucide-react";
 
@@ -24,7 +25,7 @@ export default async function SocialPage() {
         <time className="text-sm text-slate-500">Last updated: {format(parseISO("2024-03-15"), "LLLL d, yyyy")}</time>
         <hr className="my-4" />
         <div className="grid items-stretch gap-4 md:grid-cols-2">
-          {projects.map((item) => (
+          {(projects as Project[]).map((item) => (
             <SpotlightCard key={item.href} {...item} />
           ))}
         </div>

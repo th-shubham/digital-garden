@@ -8,6 +8,13 @@ export interface PostHeading {
   text: string;
   slug: string;
 }
+export interface Project {
+  title: string;
+  description: string;
+  href: string;
+  mediaSrc: string;
+  mediaType: string;
+}
 
 export interface NavItem {
   title: string;
